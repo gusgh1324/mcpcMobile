@@ -7,12 +7,98 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/mainTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="메인"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <LinearLayout
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainTitle"
+        tools:visibility="invisible">
+
+        <Button
+            android:id="@+id/btnUserLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="사용자" />
+
+        <Button
+            android:id="@+id/btnStoreLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="사업자" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainTitle"
+        tools:visibility="invisible">
+
+        <Button
+            android:id="@+id/btnUserJoin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="사용자" />
+
+        <Button
+            android:id="@+id/btnStoreJoin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="사업자" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainTitle">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그인" />
+
+        <Button
+            android:id="@+id/btnJoin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원가입" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="끝내기" />
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,11 +3,15 @@ package com.example.mcpc.storeui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.mcpc.R
+import com.example.mcpc.databinding.ActivityLoginBinding
+import com.example.mcpc.databinding.ActivityStoreDetailBinding
+import com.example.mcpc.databinding.ActivityStoreLoginBinding
+import com.example.mcpc.util.setBinding
 
 // 스토어 로그인 화면
 class StoreLoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_store_login)
+        var binding = setBinding(ActivityStoreLoginBinding::inflate)
     }
 }
