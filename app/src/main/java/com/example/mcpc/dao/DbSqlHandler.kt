@@ -31,15 +31,15 @@ class DbSqlHandler private constructor(ctx: Context){
     @SuppressLint("Range")
     fun get(num: Int): UserVO? {
         val cursor : Cursor = sqLiteDatabaseUser.query(
-            "user", null, "_nun=?", arrayOf(num.toString()), null, null, null)
+            "user", null, "_uNun=?", arrayOf(num.toString()), null, null, null)
         return if(cursor.moveToNext()){
-            val _num = cursor.getInt(cursor.getColumnIndex("_num"))
-            val id = cursor.getString(cursor.getColumnIndex("id"))
-            val pw = cursor.getString(cursor.getColumnIndex("pw"))
-            val name = cursor.getString(cursor.getColumnIndex("name"))
-            val age = cursor.getInt(cursor.getColumnIndex("age"))
-            val mobile = cursor.getString(cursor.getColumnIndex("mobile"))
-            UserVO(_num, id, pw, name, age, mobile)
+            val _uNum = cursor.getInt(cursor.getColumnIndex("_num"))
+            val uId = cursor.getString(cursor.getColumnIndex("id"))
+            val uPw = cursor.getString(cursor.getColumnIndex("pw"))
+            val uName = cursor.getString(cursor.getColumnIndex("name"))
+            val uAge = cursor.getInt(cursor.getColumnIndex("age"))
+            val uMobile = cursor.getString(cursor.getColumnIndex("mobile"))
+            UserVO(_uNum, uId, uPw, uName, uAge, uMobile)
         }
         else{
             null
@@ -48,13 +48,13 @@ class DbSqlHandler private constructor(ctx: Context){
     //
     fun update(vo: UserVO): Int {
         val values = ContentValues()
-        values.put("name", vo.name)
-        values.put("age", vo.age)
-        values.put("mobile", vo.mobile)
-        return sqLiteDatabaseUser.update("user", values, "_num=?", arrayOf(vo.num.toString()))
+        values.put("name", vo.uName)
+        values.put("age", vo.uAge)
+        values.put("mobile", vo.uMobile)
+        return sqLiteDatabaseUser.update("user", values, "_uNum=?", arrayOf(vo.uNum.toString()))
     }
 
     fun delete(num: Int): Unit {
-        sqLiteDatabaseUser.delete("user", "_num=?", arrayOf(num.toString()))
+        sqLiteDatabaseUser.delete("user", "_uNum=?", arrayOf(num.toString()))
     }
 }

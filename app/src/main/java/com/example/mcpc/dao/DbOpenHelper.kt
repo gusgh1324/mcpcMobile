@@ -9,14 +9,14 @@ class DbOpenHelper(
     ctx: Context?, name: String?, factory: SQLiteDatabase.CursorFactory?, ver: Int
 ): SQLiteOpenHelper(ctx, name, factory, ver){
     override fun onCreate(db: SQLiteDatabase?) {
-        db?.execSQL("create table if not exists member " +
+        db?.execSQL("create table if not exists user " +
                 "(_num integer primary key autoincrement,id text, pw text, name text, " +
                 "age integer, mobile text)")
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
         if (oldVersion != newVersion){
-            db?.execSQL("drop table if exists member")
+            db?.execSQL("drop table if exists user")
             onCreate(db)
         }
     }
