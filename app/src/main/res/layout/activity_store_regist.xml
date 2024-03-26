@@ -30,7 +30,7 @@
             android:textSize="30sp" />
 
         <EditText
-            android:id="@+id/edId"
+            android:id="@+id/sId"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:textSize="24dp" />
@@ -50,7 +50,7 @@
             android:textSize="30sp" />
 
         <EditText
-            android:id="@+id/edPw"
+            android:id="@+id/sPw"
             android:layout_width="135dp"
             android:layout_height="wrap_content"
             android:textSize="15sp"
@@ -76,32 +76,12 @@
             android:textSize="30sp" />
 
         <EditText
-            android:id="@+id/edName"
+            android:id="@+id/sName"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:textSize="24dp" />
     </LinearLayout>
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp">
-
-        <TextView
-            android:layout_width="25dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="1"
-            android:text="Age"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/edAge"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:textSize="24dp" />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -117,7 +97,7 @@
             android:textSize="30sp" />
 
         <EditText
-            android:id="@+id/edMobile"
+            android:id="@+id/sMobile"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:textSize="24dp" />

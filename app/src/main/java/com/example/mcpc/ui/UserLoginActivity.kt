@@ -1,7 +1,9 @@
 package com.example.mcpc.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.mcpc.HomeActivity
 import com.example.mcpc.R
 import com.example.mcpc.databinding.ActivityStoreDetailBinding
 import com.example.mcpc.databinding.ActivityUserLoginBinding
@@ -13,5 +15,8 @@ class UserLoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         var binding = setBinding(ActivityUserLoginBinding::inflate)
+
+        binding.btnReg.setOnClickListener{startActivity(Intent(applicationContext, HomeActivity::class.java))}
+        binding.btnRegBack.setOnClickListener{finish()}
     }
 }

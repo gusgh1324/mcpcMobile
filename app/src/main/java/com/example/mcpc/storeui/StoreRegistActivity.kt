@@ -1,10 +1,12 @@
 package com.example.mcpc.storeui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.mcpc.R
 import com.example.mcpc.databinding.ActivityStoreDetailBinding
 import com.example.mcpc.databinding.ActivityStoreRegistBinding
+import com.example.mcpc.ui.UserLoginActivity
 import com.example.mcpc.util.setBinding
 
 // 가게 가입 액티비티
@@ -13,5 +15,8 @@ class StoreRegistActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         var binding = setBinding(ActivityStoreRegistBinding::inflate)
+
+        binding.btnReg.setOnClickListener{startActivity(Intent(applicationContext, StoreLoginActivity::class.java))}
+        binding.btnRegBack.setOnClickListener{finish()}
     }
 }

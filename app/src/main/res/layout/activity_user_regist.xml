@@ -30,7 +30,7 @@
             android:textSize="30sp" />
 
         <EditText
-            android:id="@+id/edId"
+            android:id="@+id/uId"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:textSize="24dp" />
@@ -50,7 +50,7 @@
             android:textSize="30sp" />
 
         <EditText
-            android:id="@+id/edPw"
+            android:id="@+id/uPw"
             android:layout_width="135dp"
             android:layout_height="wrap_content"
             android:textSize="15sp"
@@ -76,7 +76,7 @@
             android:textSize="30sp" />
 
         <EditText
-            android:id="@+id/edName"
+            android:id="@+id/uName"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:textSize="24dp" />
@@ -97,7 +97,7 @@
             android:textSize="30sp" />
 
         <EditText
-            android:id="@+id/edAge"
+            android:id="@+id/uAge"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:textSize="24dp" />
@@ -117,7 +117,7 @@
             android:textSize="30sp" />
 
         <EditText
-            android:id="@+id/edMobile"
+            android:id="@+id/uMobile"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:textSize="24dp" />
