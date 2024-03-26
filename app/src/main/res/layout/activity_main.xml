@@ -98,6 +98,7 @@
             android:layout_height="wrap_content"
             android:text="끝내기" />
 
+
     </LinearLayout>
 
 

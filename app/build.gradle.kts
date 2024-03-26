@@ -34,7 +34,6 @@ android {
         jvmTarget = "1.8"
     }
     viewBinding{enable = true}
-    // 커밋테스트
 }
 
 dependencies {

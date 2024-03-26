@@ -6,9 +6,9 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.motion.widget.MotionLayout
 import com.example.mcpc.ui.MecuActivity
-import com.example.mcpc.ui.MenuWorldcupActivity
 import com.example.mcpc.ui.OrderActivity
 import com.example.mcpc.ui.ReviewActivity
+import com.example.mcpc.worldcup.MenuWorldcupActivity
 
 class CarouselActivity : AppCompatActivity() {
     private var selectedIndex: Int = 0;

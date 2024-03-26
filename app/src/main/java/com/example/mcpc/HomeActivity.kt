@@ -7,10 +7,10 @@ import com.example.mcpc.databinding.ActivityHomeBinding
 import com.example.mcpc.databinding.ActivityStoreDetailBinding
 import com.example.mcpc.join.LoginActivity
 import com.example.mcpc.ui.MecuActivity
-import com.example.mcpc.ui.MenuWorldcupActivity
 import com.example.mcpc.ui.OrderActivity
 import com.example.mcpc.ui.ReviewActivity
 import com.example.mcpc.util.setBinding
+import com.example.mcpc.worldcup.MenuWorldcupActivity
 
 // 유저 로그인 이후 화면
 // 메뉴추천, 월드컵, 리뷰게시판, 끝내기 버튼
