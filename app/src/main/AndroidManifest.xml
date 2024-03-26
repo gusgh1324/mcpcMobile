@@ -13,6 +13,36 @@
         android:theme="@style/Theme.Mcpc"
         tools:targetApi="31">
         <activity
+            android:name=".ui.UserLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.StoreLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.StoreDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MecuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MenuWorldcupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.StoreRegistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.UserRegistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
