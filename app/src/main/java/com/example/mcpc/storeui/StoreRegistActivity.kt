@@ -1,4 +1,4 @@
-package com.example.mcpc.ui
+package com.example.mcpc.storeui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
