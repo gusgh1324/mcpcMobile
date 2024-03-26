@@ -1,76 +1,98 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
-       xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <FrameLayout
-            android:id="@+id/v1"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:background="@android:color/holo_blue_dark"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent">
-        <TextView
-                android:text="메뉴추천"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:layout_gravity="center"
-                android:textColor="@android:color/background_light" android:textSize="24sp" android:textStyle="bold"/>
-    </FrameLayout>
-
-    <FrameLayout
-            android:id="@+id/v2"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:background="@android:color/holo_orange_dark"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent">
-        <TextView
-                android:text="메뉴월드컵"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:layout_gravity="center"
-                android:textColor="@android:color/background_light" android:textSize="24sp" android:textStyle="bold"/>
-    </FrameLayout>
-
-    <FrameLayout
-            android:id="@+id/v3"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:background="@android:color/holo_red_light"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent">
-        <TextView
-                android:text="주문내역"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:layout_gravity="center"
-                android:textColor="@android:color/background_light" android:textSize="24sp" android:textStyle="bold"/>
-    </FrameLayout>
-    <FrameLayout
-        android:id="@+id/v4"
+        android:id="@+id/v1"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:background="@android:color/holo_green_dark"
+        android:background="@drawable/home1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:text="메뉴추천"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/v2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/home2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:text="메뉴월드컵"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/v3"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/home3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:text="주문내역"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/v4"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/home4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
         <TextView
             android:text="리뷰"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:layout_gravity="center"
-            android:textColor="@android:color/background_light" android:textSize="24sp" android:textStyle="bold"/>
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
     </FrameLayout>
 
     <TextView
-            android:text="메추픽츄"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
-            android:textSize="25sp" android:textStyle="bold"/>
+        android:text="메추픽츄"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
 </merge>
