@@ -16,7 +16,12 @@ class UserLoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         var binding = setBinding(ActivityUserLoginBinding::inflate)
 
-        binding.btnReg.setOnClickListener{startActivity(Intent(applicationContext, HomeActivity::class.java))}
+        binding.btnReg.setOnClickListener{
+            //로그인 완료후 이전 모든스택 종료
+            val intent = Intent(applicationContext, HomeActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
+        }
         binding.btnRegBack.setOnClickListener{finish()}
     }
 }

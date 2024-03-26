@@ -16,7 +16,10 @@ class UserRegistActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         var binding = setBinding(ActivityUserRegistBinding::inflate)
 
-        binding.btnReg.setOnClickListener{startActivity(Intent(applicationContext, UserLoginActivity::class.java))}
+        binding.btnReg.setOnClickListener{
+            finish()//등록시 회원가입창 종료
+            startActivity(Intent(applicationContext, UserLoginActivity::class.java))
+        }
         binding.btnRegBack.setOnClickListener{finish()}
     }
 }
