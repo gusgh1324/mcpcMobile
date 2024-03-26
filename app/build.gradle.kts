@@ -33,8 +33,8 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    viewBinding{enable = true}
-    //커밋테스트 12
+    //do 커밋
+
 }
 
 dependencies {
