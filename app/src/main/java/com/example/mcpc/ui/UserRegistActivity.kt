@@ -17,6 +17,10 @@ class UserRegistActivity : AppCompatActivity() {
         var binding = setBinding(ActivityUserRegistBinding::inflate)
 
         binding.btnReg.setOnClickListener{
+            //유효성검사
+
+
+
             finish()//등록시 회원가입창 종료
             startActivity(Intent(applicationContext, UserLoginActivity::class.java))
         }

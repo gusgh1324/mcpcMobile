@@ -23,6 +23,5 @@ class HomeActivity : AppCompatActivity() {
         binding.btnWrold.setOnClickListener{startActivity(Intent(applicationContext, MenuWorldcupActivity::class.java)) }
         binding.btnOrder.setOnClickListener{startActivity(Intent(applicationContext, OrderActivity::class.java)) }
         binding.btnReview.setOnClickListener{startActivity(Intent(applicationContext, ReviewActivity::class.java)) }
-        binding.btnExit.setOnClickListener{finishAffinity()}
     }
 }
