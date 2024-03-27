@@ -14,10 +14,10 @@ class DbOpenHelper(
         db?.execSQL("create table if not exists user " +
                 "(_uNum integer primary key autoincrement,uId text, uPw text, uName text, " +
                 "uage integer, uMobile text)")
-//        /*store 테이블*/
-//        db?.execSQL("create table if not exists store " +
-//                "(_sNum integer primary key autoincrement,sId text, sPw text, sName text, " +
-//                "sMobile text)")
+        /*store 테이블*/
+        db?.execSQL("create table if not exists store " +
+                "(_sNum integer primary key autoincrement,sId text, sPw text, sName text, " +
+                "sMobile text)")
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
